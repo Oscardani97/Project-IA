@@ -3,7 +3,7 @@ import nltk
 nltk.download('punkt_tab')
 
 # Definiir la ruta donde se almacenarán los datos descargados
-nltk.data.path.append('C:\\Users\\osdar\\AppData\\Roaming\\nltk_data')
+nltk.data.path.append(r'C:\\Users\\osdar\\AppData\\Roaming\\nltk_data')
 
 # descargar el paquete stopwords
 nltk.download('stopwords')
@@ -19,9 +19,9 @@ from nltk.probability import FreqDist
 
 # Definimos texto en español a analizar 
 
-texto ="""¿Cómo funciona la IA?
-Las Inteligencias artificiales utilizan algoritmos y modelos matemáticos para procesar grandes cantidades de datos y tomar decisiones basadas en patrones y reglas establecidas a través del aprendizaje automático, que es la capacidad de una máquina para aprender de forma autónoma a partir de datos sin ser programada específicamente para hacerlo. De esta manera la IA puede mejorar su precisión y eficiencia con el tiempo.
-Espero que esta información sobre la IA sea de gran apoyo para su formación y aprendizaje.
+texto =""" Soy Daniel Rueda, de la ciudad de Bucaramanga,Colombia. Soy ingeniero Químico, Me gusta trabajar en a salud mental, física y emocional 
+para lograr el equilibrio.
+Mis compañeros de grupo son Esmeralda, Gustavo, Diego y Juan Carlos, los cuales son personas muy comprometidas y respetuosas y hemos hecho buen equipo.
 """
 # tokenización: convertir texto en palabras
 palabras = word_tokenize(texto, language='spanish')
